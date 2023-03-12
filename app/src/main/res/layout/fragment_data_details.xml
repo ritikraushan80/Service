@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.DataDetailsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+
+        <TextView
+            android:id="@+id/data_details_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:padding="10dp"
+            android:text="Data Details"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+             app:fontFamily="@font/poppins_semibold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EAEAEA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/id_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:gravity="center"
+        android:text="Id : "
+        android:textColor="@color/red"
+        android:textSize="18sp"
+         app:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/border" />
+
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text="1"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/id_txt"
+        app:layout_constraintStart_toEndOf="@+id/user_id_txt"
+        app:layout_constraintTop_toTopOf="@+id/id_txt" />
+
+    <TextView
+        android:id="@+id/user_id_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:gravity="center"
+        android:text="UserId : "
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        app:fontFamily="@font/poppins_semibold"
+        app:layout_constraintStart_toStartOf="@+id/id_txt"
+        app:layout_constraintTop_toBottomOf="@+id/id_txt" />
+
+
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="15dp"
+        android:text="1005"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/user_id_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/user_id_txt"
+        app:layout_constraintTop_toTopOf="@+id/user_id_txt" />
+
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:gravity="center"
+        android:text="Title : "
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/poppins_semibold"
+        app:layout_constraintStart_toStartOf="@+id/user_id_txt"
+        app:layout_constraintTop_toBottomOf="@+id/user_id_txt" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:gravity="center|start"
+        android:text="dolorem eum magni eos aperiam quia"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:fontFamily="@font/poppins_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/user_id"
+        app:layout_constraintTop_toBottomOf="@+id/user_id_txt" />
+
+
+    <TextView
+        android:id="@+id/des_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Description :- "
+        android:textColor="@color/teal_200"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/user_id_txt"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:fontFamily="@font/poppins_medium"
+        android:layout_marginHorizontal="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/des_txt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
